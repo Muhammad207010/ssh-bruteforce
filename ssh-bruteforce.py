@@ -9,7 +9,7 @@ def help_menu():
     usage = "python3 {} [-i target_ip] [-u username || -U usernamesfile] [-w wordlist]".format(sys.argv[0])
     arg=optparse.OptionParser(usage= usage)
     arg.add_option("-u", "--usname", dest= "username", help= "enter username of target ip e.g. <root>@192.168.1.1")
-    arg.add_option("-U", "--usname-list", dest= "usernames_file", help= "enter username of target ip e.g. <root>@192.168.1.1")
+    arg.add_option("-U", "--usname-list", dest= "usernames_file", help= "file containing usernames")
     arg.add_option("-i", "--ipaddr", dest= "target_ip", help= "enter target ip e.g. root@<192.168.1.1>")
     arg.add_option("-w", "--wordlist", dest= "wordlist", help= "enter your wordlist")
     (options, arguments) = arg.parse_args()
